@@ -21,6 +21,7 @@ UPLOAD_FOLDER = './temp/'
 app = Flask(__name__)
 app.debug = True
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 FABRIC_DIR = "./"
 NODE_PATH = "node"
 DEBUG = True
